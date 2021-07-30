@@ -1,0 +1,14 @@
+.cardProducts img {
+  max-width: 200px;
+  height: 200px;
+}
+.cardProducts {
+  width: 200px;
+  margin: 20px;
+}
+.cardProducts {
+}
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
