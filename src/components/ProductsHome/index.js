@@ -18,7 +18,7 @@ const ProductsHome = () => {
             <img src={product.image} alt={product.name} />
 
             <div>{product.name}</div>
-            <span>{product.price}</span>
+            <span>R${product.price.toFixed(2)}</span>
             <Button
               variant="contained"
               onClick={() => handleAddProduct(product)}

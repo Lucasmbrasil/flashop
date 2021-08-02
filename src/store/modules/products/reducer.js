@@ -9,21 +9,21 @@ import bola from "../../../assets/bola.png";
 const initialState = [
   {
     name: "Camisa Flamengo I",
-    price: "279,00",
+    price: 279.0,
     image: camisa1,
   },
-  { name: "Camisa Flamengo II", price: "279,00", image: camisa2 },
-  { name: "Camisa Flamengo III", price: "279,00", image: camisa3 },
-  { name: "Bola do Flamengo", price: "99,00", image: bola },
+  { name: "Camisa Flamengo II", price: 279.0, image: camisa2 },
+  { name: "Camisa Flamengo III", price: 279.0, image: camisa3 },
+  { name: "Bola do Flamengo", price: 99.0, image: bola },
   {
     name: "Jaqueta Corta-Vento Flamengo",
-    price: "379,00",
+    price: 379.0,
     image: jaqueta,
   },
-  { name: "Quadro Zico", price: "79,00", image: quadro1 },
+  { name: "Quadro Zico", price: 79.0, image: quadro1 },
   {
     name: "Quadro Libertadores 19",
-    price: "79,00",
+    price: 79.0,
     image: quadro2,
   },
 ];
