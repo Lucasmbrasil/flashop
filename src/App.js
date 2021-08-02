@@ -1,5 +1,4 @@
 import "./App.css";
-import Cart from "./components/ProductsCart";
 import Routes from "./Routes";
 
 function App() {
