@@ -1,14 +1,22 @@
 .cardProducts img {
   max-width: 200px;
-  height: 200px;
+  max-height: 200px;
 }
 .cardProducts {
-  width: 200px;
+  max-width: 200px;
   margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: rgb(206, 206, 206);
+  color: black;
 }
-.cardProducts {
+.cardProducts span {
+  color: red;
 }
 .cardContainer {
+  width: 80vw;
+  margin: 50px auto 0;
   display: flex;
   flex-wrap: wrap;
 }
