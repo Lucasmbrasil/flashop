@@ -1,22 +1,29 @@
-.cardProducts img {
-  max-width: 200px;
-  max-height: 200px;
-}
 .cardProducts {
-  max-width: 200px;
-  margin: 20px;
+  height: 380px;
+  width: 200px;
+  margin: 30px 20px;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  background-color: rgb(206, 206, 206);
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-end;
+  border-radius: 15px;
   color: black;
 }
+
 .cardProducts span {
-  color: red;
+  margin: 8px;
+  color: rgb(255, 0, 0);
 }
 .cardContainer {
+  justify-content: center;
   width: 80vw;
-  margin: 50px auto 0;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  background-color: white;
+}
+.cardProducts img {
+  width: 200px;
+  height: 200px;
 }

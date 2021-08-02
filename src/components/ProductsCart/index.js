@@ -1,6 +1,7 @@
+import { Button } from "@material-ui/core";
 import { useDispatch, useSelector } from "react-redux";
 import { removeFromCartThunk } from "../../store/modules/cart/thunks";
-
+import "./styles.css";
 const ProductsCart = () => {
   const cart = useSelector((store) => store.cart);
   const dispatch = useDispatch();
@@ -9,26 +10,29 @@ const ProductsCart = () => {
     dispatch(removeFromCartThunk(index));
   };
   return (
-    <>
+    <div className="cardContainer">
       {cart.length > 0 ? (
         cart.map((product, index) => (
           <div key={index} className="cardProducts">
-            <div id="cardImage">
+            <div>
               <img src={product.image} alt={product.name} />
             </div>
-            <div className="cardProducts">
+            <div>
               <div>{product.name}</div>
               <span>{product.price}</span>
-              <button onClick={() => handleRemoveProduct(index)}>
+              <Button
+                variant="contained"
+                onClick={() => handleRemoveProduct(index)}
+              >
                 Remover produto
-              </button>
+              </Button>
             </div>
           </div>
         ))
       ) : (
-        <div>Seu carrinho está vazio</div>
+        <h3>Seu carrinho está vazio!</h3>
       )}
-    </>
+    </div>
   );
 };
 export default ProductsCart;

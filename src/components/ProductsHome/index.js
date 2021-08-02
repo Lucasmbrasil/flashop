@@ -1,6 +1,8 @@
+import { Button } from "@material-ui/core";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCartThunk } from "../../store/modules/cart/thunks";
 import "./styles.css";
+import AddShoppingCartIcon from "@material-ui/icons/AddShoppingCart";
 const ProductsHome = () => {
   const dispatch = useDispatch();
 
@@ -13,16 +15,16 @@ const ProductsHome = () => {
       {products.map((product, index) => {
         return (
           <div key={index} className="cardProducts">
-            <div id="cardImage">
-              <img src={product.image} alt={product.name} />
-            </div>
-            <div className="cardProducts">
-              <div>{product.name}</div>
-              <span>{product.price}</span>
-              <button onClick={() => handleAddProduct(product)}>
-                Adicionar produto
-              </button>
-            </div>
+            <img src={product.image} alt={product.name} />
+
+            <div>{product.name}</div>
+            <span>{product.price}</span>
+            <Button
+              variant="contained"
+              onClick={() => handleAddProduct(product)}
+            >
+              Adicionar produto <AddShoppingCartIcon />
+            </Button>
           </div>
         );
       })}

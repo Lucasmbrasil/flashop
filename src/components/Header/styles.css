@@ -1,0 +1,22 @@
+.headerContainer {
+  height: 70px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.logoContainer {
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  margin-left: 20px;
+  text-decoration: none;
+}
+.logoContainer p {
+  margin-left: 20px;
+  color: rgb(206, 19, 19);
+}
+.cartIcon {
+  color: rgb(206, 19, 19);
+}

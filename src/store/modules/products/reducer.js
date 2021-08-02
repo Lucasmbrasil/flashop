@@ -2,8 +2,8 @@ import camisa1 from "../../../assets/camisa1.png";
 import camisa2 from "../../../assets/camisa2.png";
 import camisa3 from "../../../assets/camisa3.png";
 import jaqueta from "../../../assets/jaqueta.png";
-import quadro1 from "../../../assets/quadro.jpg";
-import quadro2 from "../../../assets/quadro2.jpg";
+import quadro1 from "../../../assets/quadro4.jpg";
+import quadro2 from "../../../assets/quadro3.jpg";
 import bola from "../../../assets/bola.png";
 
 const initialState = [
@@ -22,7 +22,7 @@ const initialState = [
   },
   { name: "Quadro Zico", price: "79,00", image: quadro1 },
   {
-    name: "Quadro Flamengo Libertadores 19",
+    name: "Quadro Libertadores 19",
     price: "79,00",
     image: quadro2,
   },
